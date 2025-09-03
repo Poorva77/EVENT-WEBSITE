@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speakers & Guests | Data Science Club VIT Bhopal</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ====== Base Styles ====== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #111;
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* ====== Navbar ====== */
+.navbar {
+  background: #181818;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e50914;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 8px #e5091488;
+}
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.08rem;
+  font-weight: 500;
+  position: relative;
+  padding: 0.5rem 0;
+  transition: color 0.2s;
+}
+.nav-links a:hover,
+.nav-links a:focus {
+  color: #e50914;
+}
+.nav-links a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #e50914;
+  transition: width 0.3s;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.nav-links a:hover::after,
+.nav-links a:focus::after {
+  width: 100%;
+}
+
+/* ====== Speakers Section ====== */
+.speakers-section {
+  max-width: 900px;
+  margin: 3rem auto;
+  background: #181818;
+  border-radius: 24px;
+  box-shadow: 0 2px 16px #e5091433;
+  padding: 2rem;
+}
+.speakers-section h1 {
+  color: #e50914;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-shadow: 0 2px 8px #e5091488;
+}
+.speakers-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.speaker-card {
+  background: #111;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px #e5091422;
+  padding: 1.5rem;
+  width: 260px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.speaker-card:hover, .speaker-card:focus {
+  transform: scale(1.04);
+  box-shadow: 0 4px 24px #e5091499;
+}
+.speaker-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 1rem auto;
+  border: 3px solid #e50914;
+  box-shadow: 0 2px 8px #e5091444;
+  background: #181818;
+}
+.speaker-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(30%) contrast(1.1);
+  transition: filter 0.3s;
+}
+.speaker-card:hover .speaker-img img,
+.speaker-card:focus .speaker-img img {
+  filter: grayscale(0%) contrast(1.2) drop-shadow(0 0 8px #e50914);
+}
+.speaker-name {
+  color: #e50914;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.speaker-role {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.speaker-desc {
+  color: #ccc;
+  font-size: 0.98rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ====== Responsive Design ====== */
+@media (max-width: 900px) {
+  .speakers-list {
+    gap: 1rem;
+  }
+  .speaker-card {
+    width: 45vw;
+    min-width: 180px;
+  }
+}
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .speakers-section {
+    padding: 1rem;
+  }
+  .speakers-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .speaker-card {
+    width: 90vw;
+    min-width: 140px;
+    padding: 1rem;
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">DSC CLUB</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="speakers.html">Speakers/Guests</a></li>
+      <li><a href="/schedule.html">Schedule/Agenda</a></li>
+      <li><a href="registration.html">Registration</a></li>
+      <li><a href="#">Venue/Contact Details</a></li>
+    </ul>
+  </nav>
+  <section class="speakers-section">
+    <h1>Speakers & Guests</h1>
+    <div class="speakers-list">
+      <!-- Speaker 1 -->
+      <div class="speaker-card">
+        <img src="images/speaker1.jpg" alt="Dr. Priya Sharma" class="speaker-photo">
+        <div class="speaker-name">Dr. Priya Sharma</div>
+        <div class="speaker-role">Club President</div>
+        <div class="speaker-desc">XYZ ... Leading the club with vision and passion for data science and AI.</div>
+      </div>
+      <!-- Speaker 2 -->
+      <div class="speaker-card">
+        <img src="images/speaker2.jpg" alt="Rahul Verma" class="speaker-photo">
+        <div class="speaker-name">Rahul Verma</div>
+        <div class="speaker-role">Guest Speaker</div>
+        <div class="speaker-desc">ABC ... Renowned data scientist and AI researcher, guest for Dataverse Hackathon.</div>
+      </div>
+      <!-- Speaker 3 -->
+      <div class="speaker-card">
+        <img src="images/speaker3.jpg" alt="Sneha Patel" class="speaker-photo">
+        <div class="speaker-name">Sneha Patel</div>
+        <div class="speaker-role">Vice President</div>
+        <div class="speaker-desc">DEF ... Expert in machine learning, driving club projects and workshops.</div>
+      </div>
+      <!-- Speaker 4 -->
+      <div class="speaker-card">
+        <img src="images/speaker4.jpg" alt="Amit Singh" class="speaker-photo">
+        <div class="speaker-name">Amit Singh</div>
+        <div class="speaker-role">Industry Mentor</div>
+        <div class="speaker-desc">GHI ... Senior Data Analyst at TechCorp, guiding students in real-world analytics.</div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

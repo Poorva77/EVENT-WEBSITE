@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Details | Dataverse Hackathon 2025</title>
+  <link rel="stylesheet" href="eventDetails.css">
+  <style>
+    /* ====== Base Styles ====== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #111;
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* ====== Navbar ====== */
+.navbar {
+  background: #181818;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e50914;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 8px #e5091488;
+}
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.08rem;
+  font-weight: 500;
+  position: relative;
+  padding: 0.5rem 0;
+  transition: color 0.2s;
+}
+.nav-links a:hover,
+.nav-links a:focus {
+  color: #e50914;
+}
+.nav-links a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #e50914;
+  transition: width 0.3s;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.nav-links a:hover::after,
+.nav-links a:focus::after {
+  width: 100%;
+}
+
+/* ====== Event Details Section ====== */
+.event-details-section {
+  max-width: 700px;
+  margin: 3rem auto;
+  background: #181818;
+  border-radius: 24px;
+  box-shadow: 0 2px 16px #e5091433;
+  padding: 2.5rem 2rem;
+  position: relative;
+  z-index: 1;
+}
+.event-details-section h1 {
+  color: #e50914;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  text-shadow: 0 2px 8px #e5091488;
+}
+.event-details-section ul {
+  color: #ccc;
+  font-size: 1.1rem;
+  line-height: 2;
+  list-style: none;
+  padding-left: 0;
+}
+.event-details-section li {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+.event-details-section li span {
+  color: #e50914;
+  font-weight: bold;
+}
+.event-details-section li::before {
+  content: '•';
+  color: #e50914;
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+  top: 0.1rem;
+}
+.event-details-section a {
+  color: #e50914;
+  text-decoration: underline;
+}
+.event-details-section ul ul {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-left: 1.2rem;
+}
+.event-details-section ul ul li {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  padding-left: 0.8rem;
+}
+.event-details-section ul ul li::before {
+  content: '→';
+  color: #e50914;
+  left: 0;
+  font-size: 1rem;
+  top: 0.1rem;
+  position: absolute;
+}
+
+/* ====== Call to Action Button ====== */
+.event-details-section .btn.register {
+  margin-top: 2.5rem;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(90deg, #e50914 60%, #fff 100%);
+  color: #fff;
+  box-shadow: 0 2px 12px #e5091466;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.event-details-section .btn.register:hover,
+.event-details-section .btn.register:focus {
+  background: #e50914;
+  color: #fff;
+  box-shadow: 0 4px 16px #e5091499;
+}
+
+/* ====== Info Box ====== */
+.event-details-section .info-box {
+  margin-top: 2rem;
+  color: #fff;
+  background: #222;
+  border-radius: 12px;
+  padding: 1.2rem;
+  box-shadow: 0 2px 8px #e5091422;
+  text-align: center;
+  font-size: 1.08rem;
+}
+
+/* ====== Responsive Design ====== */
+@media (max-width: 900px) {
+  .event-details-section {
+    padding: 1.5rem 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .event-details-section
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">DSC CLUB</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="speakers.html">Speakers/Guests</a></li>
+      <li><a href="schedule.html">Schedule/Agenda</a></li>
+      <li><a href="registration.html">Registration</a></li>
+      <li><a href="#">Venue/Contact Details</a></li>
+    </ul>
+  </nav>
+  <div class="animated-bg-shapes">
+    <div class="shape shape1"></div>
+    <div class="shape shape2"></div>
+    <div class="shape shape3"></div>
+  </div>
+  <section class="event-details-section">
+    <h1>Dataverse Hackathon 2025 - Event Details</h1>
+    <ul>
+      <li><span>Team Formation:</span> Form a team of up to <strong>6 members</strong>. Each team must include at least <strong>one girl member</strong> to promote diversity and inclusion.</li>
+      <li><span>Eligibility:</span> Open to all VIT Bhopal students, regardless of branch or year.</li>
+      <li><span>Problem Statements:</span> Tackle real-world challenges in Data Science, AI, and Machine Learning, revealed at the event.</li>
+      <li><span>Mentorship:</span> Get guidance from industry experts and faculty mentors throughout the hackathon.</li>
+      <li><span>Activities:</span>
+        <ul>
+          <li>Icebreaker games and networking sessions</li>
+          <li>Mini coding challenges with instant prizes</li>
+          <li>Project showcase to judges and guests</li>
+        </ul>
+      </li>
+      <li><span>Food & Refreshments:</span> Enjoy complimentary lunch, snacks, and beverages.</li>
+      <li><span>Prizes & Goodies:</span> Winners receive exciting prizes, certificates, and exclusive club merchandise.</li>
+      <li><span>Participation Certificates:</span> All participants get digital certificates.</li>
+      <li><span>Winner Announcement:</span> Results will be declared on September 17, 2025, via the club website and email.</li>
+    </ul>
+    <div class="info-box">
+      <strong style="color:#e50914;">Ready to innovate, collaborate, and win?</strong><br>
+      Gather your team, register now, and be part of the most exciting data hackathon of the year!
+    </div>
+    <a href="registration.html" class="btn register">Register Now!!</a>

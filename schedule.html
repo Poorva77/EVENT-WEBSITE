@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule & Agenda | Dataverse Hackathon 2025</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ====== Base Styles ====== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #111;
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* ====== Navbar ====== */
+.navbar {
+  background: #181818;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e50914;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 8px #e5091488;
+}
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.08rem;
+  font-weight: 500;
+  position: relative;
+  padding: 0.5rem 0;
+  transition: color 0.2s;
+}
+.nav-links a:hover,
+.nav-links a:focus {
+  color: #e50914;
+}
+.nav-links a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #e50914;
+  transition: width 0.3s;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.nav-links a:hover::after,
+.nav-links a:focus::after {
+  width: 100%;
+}
+
+/* ====== Schedule Section ====== */
+.schedule-section {
+  max-width: 900px;
+  margin: 3rem auto;
+  background: #181818;
+  border-radius: 24px;
+  box-shadow: 0 2px 16px #e5091433;
+  padding: 2.5rem 2rem;
+}
+.schedule-section h1 {
+  color: #e50914;
+  margin-bottom: 1.5rem;
+  font-size: 2.2rem;
+  text-align: center;
+  text-shadow: 0 2px 8px #e5091488;
+}
+.venue {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #e50914;
+  font-weight: bold;
+}
+.agenda-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+  background: #111;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px #e5091422;
+}
+.agenda-table th, .agenda-table td {
+  border: 1px solid #222;
+  padding: 0.8rem;
+  text-align: left;
+}
+.agenda-table th {
+  background: #181818;
+  color: #e50914;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.agenda-table tr:nth-child(even) {
+  background: #181818;
+}
+.agenda-table tr:nth-child(odd) {
+  background: #222;
+}
+.highlight {
+  color: #e50914;
+  font-weight: bold;
+}
+.post-event {
+  background: #181818;
+  border-radius: 12px;
+  padding: 1.2rem;
+  margin-top: 2rem;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 2px 12px #e5091422;
+  font-size: 1.08rem;
+}
+
+/* ====== Timeline Snippet (Optional) ====== */
+.timeline {
+  margin: 2rem 0;
+  padding-left: 0;
+  list-style: none;
+}
+.timeline li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 1.5rem;
+  color: #ccc;
+}
+.timeline li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  width: 12px;
+  height: 12px;
+  background: #e50914;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #e5091444;
+}
+.timeline li .time {
+  color: #e50914;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+/* ====== Responsive Design ====== */
+@media (max-width: 900px) {
+  .schedule-section {
+    padding: 1.5rem 1rem;
+  }
+  .agenda-table th, .agenda-table td {
+    padding: 0.6rem;
+    font-size: 0.98rem;
+  }
+}
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .schedule-section {
+    padding: 1rem;
+  }
+  .agenda-table th, .agenda-table td {
+    padding: 0.4rem;
+    font-size: 0.92rem;
+  }
+  .venue
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">DSC CLUB</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="speakers.html">Speakers/Guests</a></li>
+      <li><a href="schedule.html">Schedule/Agenda</a></li>
+      <li><a href="registration.html">Registration</a></li>
+      <li><a href="#">Venue/Contact Details</a></li>
+    </ul>
+  </nav>
+  <section class="schedule-section">
+    <h1>Dataverse Hackathon 2025 - Schedule & Agenda</h1>
+    <div class="venue">
+      <span class="highlight">Venue:</span> AB02 415, VIT Bhopal
+    </div>
+    <table class="agenda-table">
+      <thead>
+        <tr>
+          <th>Time</th>
+          <th>Event</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>09:00 AM</td>
+          <td>Registration & Welcome</td>
+          <td>Participants check-in, receive kits, and get a warm welcome from the club.</td>
+        </tr>
+        <tr>
+          <td>09:30 AM</td>
+          <td>Opening Ceremony</td>
+          <td>Introduction to the hackathon, keynote by club president & guests.</td>
+        </tr>
+        <tr>
+          <td>10:00 AM</td>
+          <td>Hackathon Kickoff</td>
+          <td>Problem statements revealed, teams start brainstorming and coding.</td>
+        </tr>
+        <tr>
+          <td>12:30 PM</td>
+          <td>Fun Games & Icebreakers</td>
+          <td>Quick interactive games to energize and connect participants.</td>
+        </tr>
+        <tr>
+          <td>01:00 PM</td>
+          <td>Lunch Break</td>
+          <td>Enjoy delicious food and network with fellow participants.</td>
+        </tr>
+        <tr>
+          <td>02:00 PM</td>
+          <td>Hackathon Continues</td>
+          <td>Teams work on their solutions, mentors available for guidance.</td>
+        </tr>
+        <tr>
+          <td>04:00 PM</td>
+          <td>Mini Challenge</td>
+          <td>Fun coding puzzle with instant prizes for winners.</td>
+        </tr>
+        <tr>
+          <td>05:00 PM</td>
+          <td>Snacks & Networking</td>
+          <td>Refreshments and informal networking session.</td>
+        </tr>
+        <tr>
+          <td>05:30 PM</td>
+          <td>Project Submission</td>
+          <td>Teams submit their final solutions for evaluation.</td>
+        </tr>
+        <tr>
+          <td>06:00 PM</td>
+          <td>Closing Ceremony</td>
+          <td>Thank you note, feedback, and event wrap-up.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="post-event">
+      <span class="highlight">Winners Announcement:</span> September 17, 2025<br>
+      Results will be posted on the club website and notified via email.<br>
+      <span class="highlight">Don't miss the excitement!</span>
+    </div>

@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dataverse Hack 2025</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">DSC CLUB</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/speakers.html">Speakers/Guests</a></li>
+      <li><a href="/schedule.html">Schedule/Agenda</a></li>
+      <li><a href="registration.html">Registration</a></li>
+      <li><a href="#">Venue/Contact Details</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-left">
+      <h1>DATAVERSE Hackathon<br><span>2025</span></h1>
+      <p>
+        Get ready for an exciting data-driven hackathon hosted by Data science club VIT Bhopal!<br>
+        Here, brilliant minds come together to solve real-world problems using
+        the power of Data Science, AI, and Machine Learning.
+      </p>
+      <div class="hero-buttons">
+        <a href="https://forms.gle/1UR8eqg4ZDn7FhAF7" target="_blank" class="btn register">Register Now!!</a>
+        <a href="/eventDetails.html" class="btn details">Event Details →</a>
+      </div>
+      <br>
+      <span id="countdown-timer" style="font-size:1.5rem; margin: 20px 0; color: #333;">
+        Event starts in: <span id="timer"></span>
+    </span>
+
+    </div>
+    
+    <div class="hero-right">
+  <div class="hero-img">
+    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80" alt="Hackathon Collaboration">
+  </div>
+</div>
+  </section>
+
+
+
+
+
+
+
+  <section id="about">
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Data Science Club VIT Bhopal</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ====== Base Styles ====== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #111;
+  color: #fff;
+  min-height: 100vh;
+}
+
+
+/* ====== About Section ====== */
+.about-section {
+  max-width: 800px;
+  margin: 3rem auto;
+  background: #181818;
+  border-radius: 24px;
+  box-shadow: 0 2px 16px #e5091433;
+  padding: 2.5rem 2rem;
+}
+.about-section h1 {
+  color: #e50914;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  text-shadow: 0 2px 8px #e5091488;
+}
+.about-section h2 {
+  color: #fff;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 8px #e5091422;
+}
+.about-section p {
+  color: #ccc;
+  font-size: 1.12rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.7;
+}
+.about-highlights {
+  margin: 2rem 0;
+  padding: 1.2rem;
+  background: #222;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px #e5091422;
+}
+.about-highlights ul {
+  color: #fff;
+  font-size: 1.08rem;
+  list-style: none;
+  padding-left: 0;
+}
+.about-highlights li {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+.about-highlights li::before {
+  content: '★';
+  color: #e50914;
+  position: absolute;
+  left: 0;
+  font-size: 1.1rem;
+  top: 0;
+}
+
+/* ====== Team Section (Optional) ====== */
+.team-section {
+  margin: 2.5rem 0 0 0;
+  padding: 2rem 0 0 0;
+  border-top: 1px solid #222;
+}
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.team-card {
+  background: #111;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px #e5091422;
+  padding: 1.2rem;
+  width: 220px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.team-card .team-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 0.7rem auto;
+  border: 2px solid #e50914;
+  box-shadow: 0 2px 8px #e5091444;
+  background: #181818;
+}
+.team-card .team-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(30%) contrast(1.1);
+  transition: filter 0.3s;
+}
+.team-card:hover .team-img img,
+.team-card:focus .team-img img {
+  filter: grayscale(0%) contrast(1.2) drop-shadow(0 0 8px #e50914);
+}
+.team-name {
+  color: #e50914;
+  font-size: 1.08rem;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+.team-role {
+  color: #fff;
+  font-size: 0.98rem;
+  margin-bottom: 0.3rem;
+}
+
+/* ====== Responsive Design ====== */
+@media (max-width: 900px) {
+  .about-section {
+    padding: 1.5rem 1rem;
+  }
+  .team-list {
+    gap: 1rem;
+  }
+  .team-card {
+    width: 45vw;
+    min-width: 140px;
+  }
+}
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .about-section {
+    padding: 1rem;
+  }
+  .team-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .team-card {
+    width: 90vw;
+    min
+  </style>
+</head>
+<body>
+  <section class="about-section">
+    <h1>About Data Science Club, VIT Bhopal</h1>
+    <p>
+      The Data Science Club at VIT Bhopal is a vibrant community of students passionate about data, analytics, artificial intelligence, and machine learning. Our mission is to foster learning, collaboration, and innovation in the field of data science through workshops, hackathons, seminars, and hands-on projects.
+    </p>
+    <h2>What We Do</h2>
+    <ul class="event-list">
+      <li>Organize workshops and seminars on trending data science topics</li>
+      <li>Host hackathons and coding competitions</li>
+      <li>Invite industry experts for guest lectures</li>
+      <li>Conduct collaborative projects and study groups</li>
+      <li>Provide mentorship and guidance for aspiring data scientists</li>
+    </ul>
+    <h2>Upcoming & Past Events</h2>
+    <ul class="event-list">
+      <li><strong>Dataverse Hackathon 2025</strong> – September 15, 2025</li>
+      <li><strong>AI Bootcamp</strong> – July 2025</li>
+      <li><strong>Data Science Week</strong> – March 2025</li>
+      <li><strong>ML Study Jam</strong> – November 2024</li>
+    </ul>
+    <p>
+      Join us to explore the world of data and unlock new opportunities for growth and innovation!
+    </p>
+  </section>
+</body>
+</html>
+  </section>
+
+
+
+
+
+
+  <section id="speakers">
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speakers & Guests | Data Science Club VIT Bhopal</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ====== Base Styles ====== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #111;
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* ====== Navbar ====== */
+.navbar {
+  background: #181818;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e50914;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 8px #e5091488;
+}
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.08rem;
+  font-weight: 500;
+  position: relative;
+  padding: 0.5rem 0;
+  transition: color 0.2s;
+}
+.nav-links a:hover,
+.nav-links a:focus {
+  color: #e50914;
+}
+.nav-links a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #e50914;
+  transition: width 0.3s;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.nav-links a:hover::after,
+.nav-links a:focus::after {
+  width: 100%;
+}
+
+/* ====== Speakers Section ====== */
+.speakers-section {
+  max-width: 900px;
+  margin: 3rem auto;
+  background: #181818;
+  border-radius: 24px;
+  box-shadow: 0 2px 16px #e5091433;
+  padding: 2rem;
+}
+.speakers-section h1 {
+  color: #e50914;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-shadow: 0 2px 8px #e5091488;
+}
+.speakers-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.speaker-card {
+  background: #111;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px #e5091422;
+  padding: 1.5rem;
+  width: 260px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.speaker-card:hover, .speaker-card:focus {
+  transform: scale(1.04);
+  box-shadow: 0 4px 24px #e5091499;
+}
+.speaker-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 1rem auto;
+  border: 3px solid #e50914;
+  box-shadow: 0 2px 8px #e5091444;
+  background: #181818;
+}
+.speaker-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(30%) contrast(1.1);
+  transition: filter 0.3s;
+}
+.speaker-card:hover .speaker-img img,
+.speaker-card:focus .speaker-img img {
+  filter: grayscale(0%) contrast(1.2) drop-shadow(0 0 8px #e50914);
+}
+.speaker-name {
+  color: #e50914;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.speaker-role {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.speaker-desc {
+  color: #ccc;
+  font-size: 0.98rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ====== Responsive Design ====== */
+@media (max-width: 900px) {
+  .speakers-list {
+    gap: 1rem;
+  }
+  .speaker-card {
+    width: 45vw;
+    min-width: 180px;
+  }
+}
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .speakers-section {
+    padding: 1rem;
+  }
+  .speakers-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .speaker-card {
+    width: 90vw;
+    min-width: 140px;
+    padding: 1rem;
+  </style>
+</head>
+<body>
+  <section class="speakers-section">
+    <h1>Speakers & Guests</h1>
+    <div class="speakers-list">
+      <!-- Speaker 1 -->
+      <div class="speaker-card">
+        <img src="images/speaker1.jpg" alt="Dr. Priya Sharma" class="speaker-photo">
+        <div class="speaker-name">Dr. Priya Sharma</div>
+        <div class="speaker-role">Club President</div>
+        <div class="speaker-desc">XYZ ... Leading the club with vision and passion for data science and AI.</div>
+      </div>
+      <!-- Speaker 2 -->
+      <div class="speaker-card">
+        <img src="images/speaker2.jpg" alt="Rahul Verma" class="speaker-photo">
+        <div class="speaker-name">Rahul Verma</div>
+        <div class="speaker-role">Guest Speaker</div>
+        <div class="speaker-desc">ABC ... Renowned data scientist and AI researcher, guest for Dataverse Hackathon.</div>
+      </div>
+      <!-- Speaker 3 -->
+      <div class="speaker-card">
+        <img src="images/speaker3.jpg" alt="Sneha Patel" class="speaker-photo">
+        <div class="speaker-name">Sneha Patel</div>
+        <div class="speaker-role">Vice President</div>
+        <div class="speaker-desc">DEF ... Expert in machine learning, driving club projects and workshops.</div>
+      </div>
+      <!-- Speaker 4 -->
+      <div class="speaker-card">
+        <img src="images/speaker4.jpg" alt="Amit Singh" class="speaker-photo">
+        <div class="speaker-name">Amit Singh</div>
+        <div class="speaker-role">Industry Mentor</div>
+        <div class="speaker-desc">GHI ... Senior Data Analyst at TechCorp, guiding students in real-world analytics.</div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <section id="schedule">
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule & Agenda | Dataverse Hackathon 2025</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ====== Base Styles ====== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #111;
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* ====== Navbar ====== */
+.navbar {
+  background: #181818;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e50914;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 8px #e5091488;
+}
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.08rem;
+  font-weight: 500;
+  position: relative;
+  padding: 0.5rem 0;
+  transition: color 0.2s;
+}
+.nav-links a:hover,
+.nav-links a:focus {
+  color: #e50914;
+}
+.nav-links a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #e50914;
+  transition: width 0.3s;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.nav-links a:hover::after,
+.nav-links a:focus::after {
+  width: 100%;
+}
+
+/* ====== Schedule Section ====== */
+.schedule-section {
+  max-width: 900px;
+  margin: 3rem auto;
+  background: #181818;
+  border-radius: 24px;
+  box-shadow: 0 2px 16px #e5091433;
+  padding: 2.5rem 2rem;
+}
+.schedule-section h1 {
+  color: #e50914;
+  margin-bottom: 1.5rem;
+  font-size: 2.2rem;
+  text-align: center;
+  text-shadow: 0 2px 8px #e5091488;
+}
+.venue {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #e50914;
+  font-weight: bold;
+}
+.agenda-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+  background: #111;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px #e5091422;
+}
+.agenda-table th, .agenda-table td {
+  border: 1px solid #222;
+  padding: 0.8rem;
+  text-align: left;
+}
+.agenda-table th {
+  background: #181818;
+  color: #e50914;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.agenda-table tr:nth-child(even) {
+  background: #181818;
+}
+.agenda-table tr:nth-child(odd) {
+  background: #222;
+}
+.highlight {
+  color: #e50914;
+  font-weight: bold;
+}
+.post-event {
+  background: #181818;
+  border-radius: 12px;
+  padding: 1.2rem;
+  margin-top: 2rem;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 2px 12px #e5091422;
+  font-size: 1.08rem;
+}
+
+/* ====== Timeline Snippet (Optional) ====== */
+.timeline {
+  margin: 2rem 0;
+  padding-left: 0;
+  list-style: none;
+}
+.timeline li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 1.5rem;
+  color: #ccc;
+}
+.timeline li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  width: 12px;
+  height: 12px;
+  background: #e50914;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #e5091444;
+}
+.timeline li .time {
+  color: #e50914;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+/* ====== Responsive Design ====== */
+@media (max-width: 900px) {
+  .schedule-section {
+    padding: 1.5rem 1rem;
+  }
+  .agenda-table th, .agenda-table td {
+    padding: 0.6rem;
+    font-size: 0.98rem;
+  }
+}
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .schedule-section {
+    padding: 1rem;
+  }
+  .agenda-table th, .agenda-table td {
+    padding: 0.4rem;
+    font-size: 0.92rem;
+  }
+  .venue
+  </style>
+</head>
+<body>
+  <section class="schedule-section">
+    <h1>Dataverse Hackathon 2025 - Schedule & Agenda</h1>
+    <div class="venue">
+      <span class="highlight">Venue:</span> AB02 415, VIT Bhopal
+    </div>
+    <table class="agenda-table">
+      <thead>
+        <tr>
+          <th>Time</th>
+          <th>Event</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>09:00 AM</td>
+          <td>Registration & Welcome</td>
+          <td>Participants check-in, receive kits, and get a warm welcome from the club.</td>
+        </tr>
+        <tr>
+          <td>09:30 AM</td>
+          <td>Opening Ceremony</td>
+          <td>Introduction to the hackathon, keynote by club president & guests.</td>
+        </tr>
+        <tr>
+          <td>10:00 AM</td>
+          <td>Hackathon Kickoff</td>
+          <td>Problem statements revealed, teams start brainstorming and coding.</td>
+        </tr>
+        <tr>
+          <td>12:30 PM</td>
+          <td>Fun Games & Icebreakers</td>
+          <td>Quick interactive games to energize and connect participants.</td>
+        </tr>
+        <tr>
+          <td>01:00 PM</td>
+          <td>Lunch Break</td>
+          <td>Enjoy delicious food and network with fellow participants.</td>
+        </tr>
+        <tr>
+          <td>02:00 PM</td>
+          <td>Hackathon Continues</td>
+          <td>Teams work on their solutions, mentors available for guidance.</td>
+        </tr>
+        <tr>
+          <td>04:00 PM</td>
+          <td>Mini Challenge</td>
+          <td>Fun coding puzzle with instant prizes for winners.</td>
+        </tr>
+        <tr>
+          <td>05:00 PM</td>
+          <td>Snacks & Networking</td>
+          <td>Refreshments and informal networking session.</td>
+        </tr>
+        <tr>
+          <td>05:30 PM</td>
+          <td>Project Submission</td>
+          <td>Teams submit their final solutions for evaluation.</td>
+        </tr>
+        <tr>
+          <td>06:00 PM</td>
+          <td>Closing Ceremony</td>
+          <td>Thank you note, feedback, and event wrap-up.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="post-event">
+      <span class="highlight">Winners Announcement:</span> September 17, 2025<br>
+      Results will be posted on the club website and notified via email.<br>
+      <span class="highlight">Don't miss the excitement!</span>
+    </div></section>
+
+
+
+
+
+    <section id="register">
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration | Dataverse Hackathon 2025</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ====== Base Styles ====== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #111;
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* ====== Navbar ====== */
+.navbar {
+  background: #181818;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e50914;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 8px #e5091488;
+}
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.08rem;
+  font-weight: 500;
+  position: relative;
+  padding: 0.5rem 0;
+  transition: color 0.2s;
+}
+.nav-links a:hover,
+.nav-links a:focus {
+  color: #e50914;
+}
+.nav-links a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #e50914;
+  transition: width 0.3s;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.nav-links a:hover::after,
+.nav-links a:focus::after {
+  width: 100%;
+}
+
+/* ====== Registration Section ====== */
+.registration-section {
+  max-width: 600px;
+  margin: 3rem auto;
+  background: #181818;
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 4px 24px #e5091433;
+  text-align: center;
+}
+.registration-section h1 {
+  color: #e50914;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  text-shadow: 0 2px 8px #e5091488;
+}
+.guide-list {
+  text-align: left;
+  margin: 1.5rem 0 2rem 0;
+  padding-left: 1.2rem;
+  color: #ccc;
+  font-size: 1.08rem;
+}
+.guide-list li {
+  margin-bottom: 0.8rem;
+}
+.qr-container {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.qr-img {
+  width: 180px;
+  height: 180px;
+  background: #222;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.7rem;
+  border: 2px solid #e50914;
+  box-shadow: 0 2px 12px #e5091444;
+}
+.qr-img img {
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+  opacity: 0.8;
+}
+.txn-id {
+  color: #e50914;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+.form-link-space {
+  margin: 2rem 0;
+  padding: 1.2rem;
+  background: #181818;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #e5091422;
+}
+
+/* ====== Button Style ====== */
+.btn {
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: #fff;
+  color: #111;
+  box-shadow: 0 2px 8px #e5091433;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn.register {
+  background: linear-gradient(90deg, #e50914 60%, #fff 100%);
+  color: #fff;
+  box-shadow: 0 2px 12px #e5091466;
+}
+.btn:hover, .btn:focus {
+  background: #e50914;
+  color: #fff;
+  box-shadow: 0 4px 16px #e5091499;
+}
+
+/* ====== Responsive Design ====== */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .registration-section {
+    padding: 1rem;
+  }
+  .qr-img {
+    width: 120px;
+    height: 120px;
+  }
+  .qr-img img {
+    width: 90px;
+    height: 90px;
+  }
+}
+  </style>
+</head>
+<body>
+  <section class="registration-section">
+    <h1>Register for Dataverse Hackathon 2025</h1>
+    <ul class="guide-list">
+      <li>Scan the QR code below to pay the registration fee.</li>
+      <li>Note your transaction ID (e.g., <span class="txn-id">1234XXXX</span>).</li>
+      <li>Fill out the registration form with your details and payment information.</li>
+      <li>For any issues, contact the club coordinators.</li>
+    </ul>
+    <div class="qr-container">
+      <div class="qr-img">
+        <!-- Replace src with your actual QR code image if available -->
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=140x140&data=FAKE_PAYMENT_LINK" alt="Payment QR Code (Sample)">
+      </div>
+      <div class="txn-id">Sample Transaction ID: 1234XXXX</div>
+    </div>
+    <div class="form-link-space">
+      <!-- Add your Google Form link below -->
+      <strong>Registration Form:</strong><br> <br>
+      <a href="https://forms.gle/1UR8eqg4ZDn7FhAF7" target="_blank" class="btn register">Register Now!!</a>
+    </div>
+  </section></section>
+</body>
+</html>
+  </section>
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Sept 15, 2025 09:00:00").getTime();
+    
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+    
+        // Get today's date and time
+        var now = new Date().getTime();
+    
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+    
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+        // Display the result in the element with id="timer"
+        document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+    
+        // If the count down is over, write some text 
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("timer").innerHTML = "EXPIRED";
+        }
+        }, 1000);
+        </script>
+</body>
+</html>
