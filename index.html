@@ -16,7 +16,7 @@
       <li><a href="speakers.html">Speakers/Guests</a></li>
       <li><a href="schedule.html">Schedule/Agenda</a></li>
       <li><a href="registration.html">Registration</a></li>
-      <li><a href="#">Venue/Contact Details</a></li>
+      <li><a href="venue.html">Venue/Contact Details</a></li>
     </ul>
   </nav>
 
@@ -31,7 +31,7 @@
       </p>
       <div class="hero-buttons">
         <a href="https://forms.gle/1UR8eqg4ZDn7FhAF7" target="_blank" class="btn register">Register Now!!</a>
-        <a href="/eventDetails.html" class="btn details">Event Details →</a>
+        <a href="eventDetails.html" class="btn details">Event Details →</a>
       </div>
       <br>
       <span id="countdown-timer" style="font-size:1.5rem; margin: 20px 0; color: #333;">
@@ -408,15 +408,6 @@ body {
   }
 }
 @media (max-width: 600px) {
-  .navbar {
-    flex-direction: column;
-    padding: 1rem;
-  }
-  .nav-links {
-    flex-direction: column;
-    gap: 1rem;
-    margin-top: 1rem;
-  }
   .speakers-section {
     padding: 1rem;
   }
@@ -645,14 +636,6 @@ body {
   }
 }
 @media (max-width: 600px) {
-  .navbar {
-    flex-direction: column;
-    padding: 1rem;
-  }
-  .nav-links {
-    flex-direction: column;
-    gap: 1rem;
-    margin-top: 1rem;
   }
   .schedule-section {
     padding: 1rem;
@@ -905,15 +888,6 @@ body {
 
 /* ====== Responsive Design ====== */
 @media (max-width: 600px) {
-  .navbar {
-    flex-direction: column;
-    padding: 1rem;
-  }
-  .nav-links {
-    flex-direction: column;
-    gap: 1rem;
-    margin-top: 1rem;
-  }
   .registration-section {
     padding: 1rem;
   }
@@ -983,5 +957,13 @@ body {
         }
         }, 1000);
         </script>
+        <script>
+          document.querySelector('.nav-scroll-btn.left').onclick = function() {
+            document.querySelector('.nav-links').scrollBy({left: -100, behavior: 'smooth'});
+          };
+          document.querySelector('.nav-scroll-btn.right').onclick = function() {
+            document.querySelector('.nav-links').scrollBy({left: 100, behavior: 'smooth'});
+          };
+          </script>
 </body>
 </html>
