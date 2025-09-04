@@ -123,7 +123,46 @@ body {
 .nav-links a:focus::after {
   width: 100%;
 }
-
+/* ====== Footer ====== */
+.site-footer {
+  background: #181818;
+  color: #ccc;
+  padding: 2rem 0 1rem 0;
+  margin-top: 3rem;
+  font-size: 1.05rem;
+  border-top: 1px solid #222;
+}
+.footer-content {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer-left {
+  margin-bottom: 1rem;
+}
+.footer-right {
+  margin-bottom: 1rem;
+}
+.footer-instagram {
+  color: #ccc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.footer-instagram:hover,
+.footer-instagram:focus {
+  color: #e50914;
+}
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+}
 /* Responsive: keep nav horizontal and scrollable */
 @media (max-width: 900px) {
   .navbar {
@@ -151,7 +190,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
   padding: 4rem 2rem 2rem 2rem;
   min-height: 70vh;
   background: linear-gradient(120deg, #111 70%, #181818 100%);
@@ -254,19 +293,24 @@ body {
 
 /* ====== Hero Image ====== */
 .hero-right {
-  flex: 1 1 320px;
+  flex: 2 1 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 280px;
+  justify-content: flex-start;
+  align-items: stretch;
+  min-width: 400px;
+  height: 100%;
 }
 .hero-img {
-  width: 320px;
-  height: 320px;
-  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  min-width: 400px;
+  min-height: 400px;
+  max-width: 700px;
+  max-height: 700px;
+  border-radius: 32px;
   overflow: hidden;
-  border: 4px solid #e50914;
-  box-shadow: 0 4px 32px #e5091444;
+  border: 6px solid #e50914;
+  box-shadow: 0 8px 48px #e5091499;
   background: #181818;
   display: flex;
   align-items: center;
@@ -280,6 +324,7 @@ body {
   filter: grayscale(30%) contrast(1.1);
   transition: filter 0.3s;
 }
+
 .hero-img:hover, .hero-img:focus {
   transform: scale(1.05) rotate(-2deg);
   box-shadow: 0 8px 48px #e5091499;
